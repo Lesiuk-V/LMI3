@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp1.DelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="DelWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="133,79,0,0"
+                   Text="Enter a name to delete"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left"
+                 Margin="280,79,0,0"
+                 x:Name="delTextBox"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="120" />
+        <Button Content="Delete"
+                x:Name="Del"
+                RenderTransformOrigin="0.5,0.5"
+                Margin="0,114,313,0"
+                Click="Del_Click"
+                Height="34"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                Width="93">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="-0.384" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>
