@@ -24,9 +24,6 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //bool a = true;
-            //MainWindow mv = new MainWindow(a);
-            //mv.data.Add(new MyClass(NameTextbox.Text, SurnameTextbox.Text, AgeTextbox.Text));
             Close();
         }
     }
